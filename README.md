@@ -49,6 +49,9 @@ Ele deve conter os códigos das ações, por exemplo:
 Copiar código
 PETR4, VALE3, ITUB4, ...
 </details>
+
+---
+
 ▶️ Uso
 Execute o comando abaixo no terminal:
 
@@ -64,6 +67,8 @@ Definir o período de análise
 
 Visualizar o desempenho individual e total da carteira
 
+---
+
 🧩 Tecnologias Utilizadas
 Python 3.8+
 
@@ -74,6 +79,8 @@ Pandas – Manipulação de dados
 yfinance – Obtenção de cotações históricas
 
 config.toml – Personalização do tema (modo escuro)
+
+---
 
 🤝 Como Contribuir
 <details> <summary><b>Passos para contribuir</b></summary>
@@ -97,6 +104,9 @@ git push origin minha-nova-feature
 Abra um Pull Request 🚀
 
 </details>
+
+---
+
 👤 Autor
 <center>
 Rafael Bittencourt de Araújo
