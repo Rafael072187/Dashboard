@@ -1,99 +1,107 @@
-📈 Dashboard de Ações – IBOVESPA
+<center><h1>📊 Dashboard de Ações - IBOVESPA</h1></center>
 
-Aplicação interativa desenvolvida em Streamlit para visualizar a evolução de preços de ações da B3 (IBOVESPA), calcular performance individual e da carteira, e filtrar por períodos personalizados.
+<p align="center">
+  Aplicação interativa desenvolvida em <b>Streamlit</b> para analisar e visualizar a evolução de preços das ações da <b>B3</b>, calcular performance individual e da carteira, e aplicar filtros personalizados de data.
+</p>
 
-----------------------------------------------------------------------------------------------------------------
+---
 
-🚀 Funcionalidades
+## 🧭 Tabela de Conteúdos
+- [Descrição](#-descrição)
+- [Instalação](#-instalação)
+- [Uso](#-uso)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Como Contribuir](#-como-contribuir)
+- [Autor](#-autor)
 
-Carrega automaticamente a lista de ações do IBOV a partir de um arquivo CSV (IBOV.csv).
+---
 
-Obtém cotações históricas via yfinance.
+## 💡 Descrição
+O **Dashboard de Ações** permite acompanhar o desempenho histórico de ativos listados no **IBOVESPA**, exibindo gráficos interativos e estatísticas de performance.  
+Ideal para investidores e analistas que desejam entender a evolução dos preços e comparar resultados de carteiras simuladas.
 
-Permite selecionar uma ou mais ações para exibição.
+---
 
-Filtro de intervalo de datas com slider.
+## ⚙️ Instalação
 
-Gera gráficos de linha interativos.
+<details>
+<summary><b>Passos para configurar o ambiente</b></summary>
 
-Calcula e exibe:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Rafael072187/Dashboard.git
+   cd Dashboard
+Crie e ative um ambiente virtual (opcional, mas recomendado):
 
-Performance individual de cada ativo no período selecionado.
+bash
+Copiar código
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+Instale as dependências:
 
-Performance total da carteira (supondo R$ 1000 investidos em cada ativo).
+bash
+Copiar código
+pip install -r requirements.txt
+Verifique se o arquivo IBOV.csv está no mesmo diretório do script DashboardAcoes.py.
+Ele deve conter os códigos das ações, por exemplo:
 
-Interface com tema escuro (config.toml).
+Copiar código
+PETR4, VALE3, ITUB4, ...
+</details>
+▶️ Uso
+Execute o comando abaixo no terminal:
 
-----------------------------------------------------------------------------------------------------------------
+bash
+Copiar código
+streamlit run DashboardAcoes.py
+A aplicação abrirá automaticamente no navegador.
+Utilize o menu lateral para:
 
-🛠️ Pré-requisitos
+Selecionar uma ou mais ações do IBOV
 
+Definir o período de análise
+
+Visualizar o desempenho individual e total da carteira
+
+🧩 Tecnologias Utilizadas
 Python 3.8+
 
-Pacotes:
+Streamlit – Interface web interativa
 
-pip install streamlit pandas yfinance
+Pandas – Manipulação de dados
 
-----------------------------------------------------------------------------------------------------------------
+yfinance – Obtenção de cotações históricas
 
-📂 Estrutura de Arquivos
+config.toml – Personalização do tema (modo escuro)
 
-📦 dashboard-acoes
+🤝 Como Contribuir
+<details> <summary><b>Passos para contribuir</b></summary>
+Faça um fork do projeto
 
- ┣ 📜 DashboardAcoes.py   # Código principal da aplicação
- 
- ┣ 📜 IBOV.csv            # Lista de ações do IBOV
- 
- ┣ 📜 config.toml         # Configuração do tema (modo dark)
+Crie uma branch para sua modificação:
 
- ----------------------------------------------------------------------------------------------------------------
+bash
+Copiar código
+git checkout -b minha-nova-feature
+Faça as alterações e commit:
 
-▶️ Como executar
+bash
+Copiar código
+git commit -m "Adicionei nova funcionalidade"
+Envie a branch:
 
-Coloque o arquivo IBOV.csv no mesmo diretório, no formato:
+bash
+Copiar código
+git push origin minha-nova-feature
+Abra um Pull Request 🚀
 
-Código:
+</details>
+👤 Autor
+<center>
+Rafael Bittencourt de Araújo
+💼 Desenvolvedor Python e entusiasta de dados
+🌐 GitHub
 
-PETR4,
-VALE3,
-ITUB4
-...
-
-----------------------------------------------------------------------------------------------------------------
-
-Execute no terminal:
-
-streamlit run DashboardAcoes.py
-
-O navegador abrirá com a aplicação interativa.
-
-----------------------------------------------------------------------------------------------------------------
-
-📊 Uso
-
-No menu lateral, selecione as ações e o intervalo de datas.
-
-Veja o gráfico de evolução de preços.
-
-Abaixo do gráfico, visualize:
-
-Performance de cada ativo (verde para ganhos, vermelho para perdas).
-
-Performance total da carteira no período.
-
-----------------------------------------------------------------------------------------------------------------
-
-🎨 Tema
-
-O tema escuro é configurado via config.toml:
-
-[theme]
-base = "dark"
-
-----------------------------------------------------------------------------------------------------------------
-
-⚠️ Observações
-
-É necessário acesso à internet para obter as cotações via yfinance.
-
-As datas de início e fim no carregamento estão fixadas de 01/01/2020 até 01/08/2025 — ajuste no código se necessário.
+</center>
+<p align="center"> <a href="https://github.com/Rafael072187/Dashboard" style="background-color:#0366d6;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;"> 🔗 Ver Repositório no GitHub </a> </p> ```
