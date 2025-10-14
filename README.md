@@ -52,7 +52,7 @@ PETR4, VALE3, ITUB4, ...
 
 ---
 
-▶️ Uso
+## ▶️ Uso
 Execute o comando abaixo no terminal:
 
 bash
@@ -69,7 +69,7 @@ Visualizar o desempenho individual e total da carteira
 
 ---
 
-🧩 Tecnologias Utilizadas
+## 🧩 Tecnologias Utilizadas
 Python 3.8+
 
 Streamlit – Interface web interativa
@@ -82,7 +82,7 @@ config.toml – Personalização do tema (modo escuro)
 
 ---
 
-🤝 Como Contribuir
+## 🤝 Como Contribuir
 <details> <summary><b>Passos para contribuir</b></summary>
 Faça um fork do projeto
 
@@ -107,7 +107,7 @@ Abra um Pull Request 🚀
 
 ---
 
-👤 Autor
+## 👤 Autor
 <center>
 Rafael Bittencourt de Araújo
 💼 Desenvolvedor Python e entusiasta de dados
